@@ -1,4 +1,3 @@
-import { EventNote } from "@mui/icons-material";
 
 export const exerciseOptions = {
     method: 'GET',

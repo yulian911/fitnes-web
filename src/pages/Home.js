@@ -5,11 +5,23 @@ import HeroBaner from '../components/HeroBaner'
 import SearchExercises from '../components/SearchExercises'
 
 function Home() {
+
+  const [exercises, setErcises] = useState([])
+  const [bodyPart, setBodyPart] = useState('all')
   return (
   <Box>
     <HeroBaner />
-    <SearchExercises/>
-    <Exercises/>
+    <SearchExercises 
+        setErcises={setErcises} 
+        bodyPart={bodyPart} 
+        setBodyPart={setBodyPart}
+    />
+    <Exercises 
+        setErcises={setErcises} 
+        bodyPart={bodyPart} 
+        setBodyPart={setBodyPart}
+    />
+
   </Box>
   )
 }
