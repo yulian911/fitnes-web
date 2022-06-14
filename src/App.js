@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 
 
 function App() {
+
   return (
     <Box width='400px' sx={{width:{xl:1488}}} m='auto'>
         <Navbar/>

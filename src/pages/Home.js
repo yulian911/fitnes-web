@@ -6,20 +6,21 @@ import SearchExercises from '../components/SearchExercises'
 
 function Home() {
 
-  const [exercises, setErcises] = useState([])
-  const [bodyPart, setBodyPart] = useState('all')
+  const [exercises, setExercises] = useState([]);
+  const [bodyPart, setBodyPart] = useState('all');
+
+  // console.log(exercises)
   return (
   <Box>
     <HeroBaner />
     <SearchExercises 
-        setErcises={setErcises} 
-        bodyPart={bodyPart} 
-        setBodyPart={setBodyPart}
-    />
+      setExercises={setExercises} 
+      bodyPart={bodyPart} 
+      setBodyPart={setBodyPart} />
     <Exercises 
-        setErcises={setErcises} 
+        setExercises={setExercises} 
         bodyPart={bodyPart} 
-        setBodyPart={setBodyPart}
+        exercises={exercises}
     />
 
   </Box>
